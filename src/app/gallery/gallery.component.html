@@ -1,0 +1,6 @@
+<div class="container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <mat-card fxFlex="20%" *ngFor="let p of flickerResponse" class="product">
+          <img class="image" mat-card-image [src]='p.url' alt="photo">
+          <mat-card-title>{{p.title}}</mat-card-title>
+        </mat-card>
+</div>

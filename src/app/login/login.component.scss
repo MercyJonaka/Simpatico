@@ -1,0 +1,14 @@
+.close {
+    position: absolute;
+    float: right;
+    top:-24px;
+    right:-24px;  }
+
+  .close_wrp {
+    display: inline-block;
+    position: relative;
+  }
+
+  .mat-button.no-hover ::ng-deep .mat-button-focus-overlay {
+    background: none;
+  }

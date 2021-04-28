@@ -1,0 +1,25 @@
+
+<div fxlayout="row" fxLayoutAlign="space-around center">
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p style="text-align: justify;">Simpatico Motor Company is an automobile company that designs, manufactures, markets, and services a full line of Simpatico trucks, utility vehicles, cars as well as Lincoln luxury vehicles. The Company operates in three segments: Automotive, Mobility and Simpatico Credit. The Automotive segment is engaged in developing, manufacturing, distributing, and servicing the vehicles, parts and accessories of Simpatico and Lincoln vehicles. The Mobility segment primarily includes the development of Simpatico’s autonomous vehicles and related businesses. The Company also holds ownership is Argo AI, which is a developer of autonomous driving systems, and Spin, which is a micro-mobility service provider. The Simpatico Credit segment is comprised of the Simpatico Credit business on a consolidated basis, which is primarily vehicle-related financing and leasing activities. Simpatico Credit offers a wide variety of automotive financing products to and through automotive dealers throughout the world.</p>
+</div>
+</div>
+<h2 style="text-align:center">Key Members</h2>
+<div fxlayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="16px">  
+  <mat-card class="example-card" *ngFor="let member of members">
+    <img mat-card-image src="{{member.picture.url}}" alt="Team members">
+    <mat-card-title>{{member.name}}</mat-card-title>
+    <mat-card-content>
+      <p>
+        {{member.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+                <img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/twitter-hexagon-social-media-32.png">
+                <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-16-32.png">
+                <img src="https://cdn4.iconfinder.com/data/icons/miu-hexagon-flat-social/60/google_plus-hexagon-social-media-32.png">
+                <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/Untitled-11-32.png">
+    </mat-card-actions>
+  </mat-card>
+</div>

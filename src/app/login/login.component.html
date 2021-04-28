@@ -1,0 +1,24 @@
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div fxLayout="column" fxLayoutGap="5px">
+        <div class="close_wrp">  
+        <button class="close no-hover" mat-button (click)="onNoClick()">x</button>  
+        </div>
+        <h2 fxLayoutAlign="center">Sign In</h2>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="username">
+          <mat-error>
+            Please provide a valid email address
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" formControlName="password">
+          <mat-error>
+            Please provide a valid password
+          </mat-error>
+        </mat-form-field>
+        <div fxLayout="row" fxLayoutAlign="center">
+        <button mat-raised-button color="primary" [disabled]="!form.valid">Login</button>
+        </div>
+      </div>
+      </form>
